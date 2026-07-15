@@ -3,31 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Aditya</title>
+    <title>Aditya | Data Analyst Portfolio</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-            background-color: #f4f4f9;
+        /* Desain Dasar & Warna Tema Gelap Modern */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
-        h1 { color: #333; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f172a; /* Slate Dark */
+            color: #f8fafc;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 650px;
+            width: 100%;
+            background: #1e293b; /* Card Dark Blue */
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            border: 1px solid #334155;
+        }
+        /* Bagian Profil */
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #38bdf8, #3b82f6);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: white;
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .tagline {
+            font-size: 1rem;
+            color: #94a3b8;
+            margin-bottom: 25px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .bio {
+            color: #cbd5e1;
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+        /* Bagian Projek (Card) */
+        .project-section {
+            text-align: left;
+            margin-top: 30px;
+        }
+        .project-section h2 {
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+            color: #38bdf8;
+            border-bottom: 2px solid #334155;
+            padding-bottom: 8px;
+        }
+        .project-card {
+            background: #0f172a;
+            border: 1px solid #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-3px);
+            border-color: #38bdf8;
+        }
+        .project-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #f1f5f9;
+        }
+        .project-desc {
+            font-size: 0.9rem;
+            color: #94a3b8;
+            margin-bottom: 15px;
+        }
+        /* Tombol download/link */
         .btn {
             display: inline-block;
+            background: linear-gradient(135deg, #38bdf8, #3b82f6);
+            color: #ffffff;
             padding: 10px 20px;
-            margin-top: 20px;
-            background-color: #007bff;
-            color: white;
+            border-radius: 8px;
             text-decoration: none;
-            border-radius: 5px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+        .btn:hover {
+            opacity: 0.9;
         }
     </style>
 </head>
 <body>
-    <h1>Selamat Datang di Portofolio Saya</h1>
-    <p>Ini adalah halaman utama website saya yang di-host menggunakan GitHub Pages.</p>
-    
-    <!-- Link untuk mendownload file PBIX kamu -->
-    <a class="btn" href="project 2.pbix" download>Download Project 2 (PBIX)</a>
+
+    <div class="container">
+        <!-- Inisial Profil (Nanti bisa diganti foto asli) -->
+        <div class="profile-img">A</div>
+        
+        <h1>Aditya</h1>
+        <p class="tagline">Data Analyst & Tech Enthusiast</p>
+        
+        <p class="bio">
+            Selamat datang di portofolio saya! Saya berfokus pada pengolahan data, visualisasi, dan penyusunan laporan interaktif untuk membantu pengambilan keputusan yang berbasis data.
+        </p>
+
+        <!-- Bagian Portfolio Projek -->
+        <div class="project-section">
+            <h2>Projek Unggulan</h2>
+            <div class="project-card">
+                <div class="project-title">Project Power BI - Analisis Data</div>
+                <p class="project-desc">
+                    Detail analisis interaktif menggunakan Power BI. Klik tombol di bawah ini untuk melihat dokumen atau berkas projek terkait jika sudah diunggah kembali nanti.
+                </p>
+                <!-- Tombol link (bisa kamu arahkan ke link Google Drive atau berkas lainnya nanti) -->
+                <a href="#" class="btn">Lihat Projek</a>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
