@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aditya | Data Analyst Portfolio</title>
     <style>
-        /* Desain Dasar & Warna Tema Gelap Modern */
         * {
             box-sizing: border-box;
             margin: 0;
@@ -13,32 +12,31 @@
         }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0f172a; /* Slate Dark */
+            background-color: #0f172a;
             color: #f8fafc;
             line-height: 1.6;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
+            padding: 40px 20px;
         }
         .container {
-            max-width: 650px;
-            width: 100%;
-            background: #1e293b; /* Card Dark Blue */
-            padding: 40px 30px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        /* Header Profil */
+        .profile-card {
+            background: #1e293b;
+            padding: 30px;
             border-radius: 16px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
             text-align: center;
             border: 1px solid #334155;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
         }
-        /* Bagian Profil */
         .profile-img {
-            width: 110px;
-            height: 110px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             background: linear-gradient(135deg, #38bdf8, #3b82f6);
-            margin: 0 auto 20px;
+            margin: 0 auto 15px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -48,7 +46,7 @@
             box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
         }
         h1 {
-            font-size: 2rem;
+            font-size: 2.2rem;
             margin-bottom: 8px;
             background: linear-gradient(to right, #38bdf8, #818cf8);
             -webkit-background-clip: text;
@@ -57,7 +55,7 @@
         .tagline {
             font-size: 1rem;
             color: #94a3b8;
-            margin-bottom: 25px;
+            margin-bottom: 15px;
             font-weight: 500;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -65,53 +63,72 @@
         .bio {
             color: #cbd5e1;
             font-size: 1rem;
-            margin-bottom: 30px;
+            max-width: 600px;
+            margin: 0 auto;
         }
-        /* Bagian Projek (Card) */
-        .project-section {
-            text-align: left;
-            margin-top: 30px;
-        }
-        .project-section h2 {
-            font-size: 1.25rem;
-            margin-bottom: 15px;
+
+        /* Section Project */
+        .section-title {
+            font-size: 1.5rem;
             color: #38bdf8;
+            margin-bottom: 20px;
             border-bottom: 2px solid #334155;
             padding-bottom: 8px;
         }
         .project-card {
-            background: #0f172a;
-            border: 1px solid #1e293b;
-            padding: 20px;
-            border-radius: 10px;
-            transition: transform 0.2s, border-color 0.2s;
-        }
-        .project-card:hover {
-            transform: translateY(-3px);
-            border-color: #38bdf8;
+            background: #1e293b;
+            border: 1px solid #334155;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
         .project-title {
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin-bottom: 8px;
+            font-size: 1.3rem;
+            font-weight: bold;
             color: #f1f5f9;
+            margin-bottom: 10px;
         }
         .project-desc {
-            font-size: 0.9rem;
-            color: #94a3b8;
-            margin-bottom: 15px;
+            color: #cbd5e1;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
         }
-        /* Tombol download/link */
-        .btn {
-            display: inline-block;
-            background: linear-gradient(135deg, #38bdf8, #3b82f6);
-            color: #ffffff;
-            padding: 10px 20px;
-            border-radius: 8px;
-            text-decoration: none;
+        
+        /* List Insight / Key Findings */
+        .insights-list {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            color: #94a3b8;
             font-size: 0.9rem;
+        }
+        .insights-list li {
+            margin-bottom: 5px;
+        }
+
+        /* Button Group */
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.85rem;
             font-weight: 600;
             transition: opacity 0.2s;
+        }
+        .btn-pbi {
+            background: linear-gradient(135deg, #f2c811, #f2b011);
+            color: #000000;
+        }
+        .btn-excel {
+            background: linear-gradient(135deg, #107c41, #1f9a55);
+            color: #ffffff;
         }
         .btn:hover {
             opacity: 0.9;
@@ -121,28 +138,52 @@
 <body>
 
     <div class="container">
-        <!-- Inisial Profil (Nanti bisa diganti foto asli) -->
-        <div class="profile-img">A</div>
-        
-        <h1>Aditya</h1>
-        <p class="tagline">Data Analyst & Tech Enthusiast</p>
-        
-        <p class="bio">
-            Selamat datang di portofolio saya! Saya berfokus pada pengolahan data, visualisasi, dan penyusunan laporan interaktif untuk membantu pengambilan keputusan yang berbasis data.
-        </p>
+        <!-- Header Profil -->
+        <div class="profile-card">
+            <div class="profile-img">A</div>
+            <h1>Aditya</h1>
+            <p class="tagline">Data Analyst Portfolio</p>
+            <p class="bio">
+                Selamat datang di portofolio saya! Di bawah ini adalah kumpulan proyek analisis data yang telah saya kerjakan, lengkap dengan dataset mentah dan visualisasi dashboard interaktifnya.
+            </p>
+        </div>
 
-        <!-- Bagian Portfolio Projek -->
-        <div class="project-section">
-            <h2>Projek Unggulan</h2>
-            <div class="project-card">
-                <div class="project-title">Project Power BI - Analisis Data</div>
-                <p class="project-desc">
-                    Detail analisis interaktif menggunakan Power BI. Klik tombol di bawah ini untuk melihat dokumen atau berkas projek terkait jika sudah diunggah kembali nanti.
-                </p>
-                <!-- Tombol link (bisa kamu arahkan ke link Google Drive atau berkas lainnya nanti) -->
-                <a href="#" class="btn">Lihat Projek</a>
+        <h2 class="section-title">Portofolio Proyek</h2>
+
+        <!-- PROJECT 1 -->
+        <div class="project-card">
+            <div class="project-title">📊 Proyek Analisis 1: Kasus Covid-19 Indonesia</div>
+            <p class="project-desc">
+                Tulis deskripsi proyek pertamamu di sini. Misalnya: "Analisis tren penyebaran kasus Covid-19 di Indonesia menggunakan visualisasi interaktif untuk melihat pertumbuhan kasus harian, tingkat kesembuhan, dan wilayah dengan dampak terbesar."
+            </p>
+            <ul class="insights-list">
+                <li><strong>Metrik Utama:</strong> Total Kasus, Tingkat Kesembuhan, Kasus Aktif Harian.</li>
+                <li><strong>Alat:</strong> Excel (Dataset) & Power BI (Dashboard Visualisasi).</li>
+            </ul>
+            <div class="btn-group">
+                <!-- File Power BI & Excel Proyek 1 -->
+                <a href="covid 19 Indonesia.pbix" class="btn btn-pbi" download>📥 Download Power BI Dashboard</a>
+                <a href="Project 1.xlsx" class="btn btn-excel" download>📥 Download Dataset (Excel)</a>
             </div>
         </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card">
+            <div class="project-title">📈 Proyek Analisis 2: Judul Proyek Kedua</div>
+            <p class="project-desc">
+                Tulis deskripsi proyek keduamu di sini. Misalnya: "Dashboard interaktif untuk menganalisis performa bisnis/data operasional guna membantu pengambilan keputusan strategis."
+            </p>
+            <ul class="insights-list">
+                <li><strong>Metrik Utama:</strong> Masukkan indikator atau metrik penting di sini.</li>
+                <li><strong>Alat:</strong> Excel & Power BI.</li>
+            </ul>
+            <div class="btn-group">
+                <!-- File Power BI & Excel Proyek 2 -->
+                <a href="project 2.pbix" class="btn btn-pbi" download>📥 Download Power BI Dashboard</a>
+                <a href="Porto 2.xlsm" class="btn btn-excel" download>📥 Download Dataset (Excel)</a>
+            </div>
+        </div>
+
     </div>
 
 </body>
