@@ -133,20 +133,44 @@
         .btn:hover {
             opacity: 0.9;
         }
+    /* Tombol Switcher Bahasa */
+.lang-switcher {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+.lang-btn {
+    background: #1e293b;
+    color: #94a3b8;
+    border: 1px solid #334155;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.lang-btn:hover {
+    color: #38bdf8;
+    border-color: #38bdf8;
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.2);
+}
     </style>
 </head>
 <body>
+    <!-- Tombol Ganti Bahasa -->
+    <div class="lang-switcher">
+        <button id="langToggle" class="lang-btn">EN | ID</button>
+    </div>
 
     <div class="container">
         <!-- Header Profil -->
         <div class="profile-card">
-            <!-- Memanggil foto Profile.jpg yang sudah Anda upload -->
             <img src="Profile.png" alt="Foto Profil Aditya" style="width: 140px; height: 140px; border-radius: 50%; object-fit: contain; object-position: center bottom; padding: 0; margin-bottom: 15px; border: 4px solid #38bdf8;">
             <h1>Aditya</h1>
             <p class="tagline">Excel & Power BI Specialist</p>
-            <p class="bio">
-                Data Analyst yang berfokus pada pengolahan data mentah menjadi dasbor interaktif yang bermakna. Berpengalaman dalam efisiensi pelaporan menggunakan Excel tingkat lanjut dan visualisasi data yang mendalam dengan Power BI.
-            </p>
+            <p class="bio" data-id="Data Analyst yang berfokus pada pengolahan data mentah menjadi dasbor interaktif yang bermakna. Berpengalaman dalam efisiensi pelaporan menggunakan Excel tingkat lanjut dan visualisasi data yang mendalam dengan Power BI." data-en="Data Analyst focused on transforming raw data into meaningful, interactive dashboards. Experienced in reporting efficiency using advanced Excel and in-depth data visualization with Power BI.">Data Analyst yang berfokus pada pengolahan data mentah menjadi dasbor interaktif yang bermakna. Berpengalaman dalam efisiensi pelaporan menggunakan Excel tingkat lanjut dan visualisasi data yang mendalam dengan Power BI.</p>
         </div>
 
         <h2 class="section-title">Portofolio Proyek</h2>
@@ -187,5 +211,32 @@
 
     </div>
 
+<script>
+        const langToggle = document.getElementById('langToggle');
+        // Cek bahasa yang terakhir dipilih user, jika tidak ada default ke Indonesia (id)
+        let currentLang = localStorage.getItem('portfolio-lang') || 'id';
+
+        function applyLanguage(lang) {
+            document.querySelectorAll('[data-id]').forEach(el => {
+                if (lang === 'en') {
+                    el.textContent = el.getAttribute('data-en');
+                } else {
+                    el.textContent = el.getAttribute('data-id');
+                }
+            });
+            // Update tulisan di tombol agar user tahu bahasa apa yang sedang aktif
+            langToggle.textContent = lang === 'en' ? 'ID | EN' : 'EN | ID';
+            localStorage.setItem('portfolio-lang', lang);
+        }
+
+        // Jalankan fungsi bahasa saat web pertama kali dibuka
+        applyLanguage(currentLang);
+
+        // Jalankan fungsi tukar bahasa saat tombol diklik
+        langToggle.addEventListener('click', () => {
+            currentLang = currentLang === 'id' ? 'en' : 'id';
+            applyLanguage(currentLang);
+        });
+    </script>
 </body>
 </html>
