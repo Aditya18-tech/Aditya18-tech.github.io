@@ -1,29 +1,25 @@
-# 🚗 Road Accident Analysis Dashboard (Project 3)
+# 📊 Aditya Dwi Hariyanto — Data Analyst Portfolio
 
-## 📌 Ringkasan Proyek
-Proyek ini bertujuan untuk menganalisis data kecelakaan lalu lintas (*road accidents*) guna mengidentifikasi tren kecelakaan, kondisi jalan/cuaca yang paling berisiko, serta faktor utama penyebab kecelakaan.
+Selamat datang di repositori portofolio analisis data saya! 
 
----
-
-## 📊 Visualisasi Dashboard
-![Preview Dashboard](Project%201-PBI-preview.png)
+Repositori ini berfungsi sebagai penyimpanan terpusat untuk *source code*, *sample dataset*, dan aset dari seluruh proyek yang saya kerjakan.
 
 ---
 
-## 🛠️ Tools & Teknologi
-* **Power BI** / **Excel** (sesuaikan dengan tool yang kamu pakai)
-* **Data Cleansing & Transformation**
-* **Data Visualization**
+### 🌐 Lihat Portofolio Lengkap & Dashboard Interaktif
+Seluruh daftar proyek terbaru, visualisasi interaktif, dan laporan analisis lengkap dipublikasikan di website utama saya:
+
+👉 **[aditya18-tech.github.io](https://aditya18-tech.github.io/)**
 
 ---
 
-## 📁 Catatan Dataset
-* File `Raw Road Accident Data-Sample.xlsx` yang ada di repositori ini merupakan **sampel data** untuk memberikan gambaran struktur dan tipe kolom data.
-* Dataset versi utuh/lengkap tidak diunggah secara penuh karena keterbatasan ukuran file.
+### 🛠️ Core Skills & Tools
+* **Business Intelligence & Dashboards:** Power BI, Microsoft Excel
+* **Data Cleansing & Transformation:** Power Query, DAX Modeling
+* **Data Analysis:** Exploratory Data Analysis (EDA), KPI Reporting
 
 ---
 
-## 💡 Temuan Utama (Key Insights)
-1. **Faktor Cuaca/Jalan:** Sebagian besar kecelakaan terjadi pada kondisi...
-2. **Waktu Rawan:** Jam/hari dengan tingkat kecelakaan tertinggi adalah...
-3. **Kategori Kendaraan:** Kendaraan jenis... mencatatkan angka keterlibatan tertinggi.
+### 📬 Kontak
+* **LinkedIn:** [Aditya Dwi Hariyanto](https://www.linkedin.com/in/aditya-dwi-hariyanto-381aa2219/)
+* **Email:** adityadwihariyanto@gmail.com
