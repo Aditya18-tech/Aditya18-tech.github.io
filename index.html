@@ -217,17 +217,30 @@
     </strong>
   </div>
 
-  <!-- Deskripsi Proyek -->
-  <p class="project-desc" data-id="Pengembangan dasbor interaktif Power BI untuk menganalisis metrik keselamatan jalan, tingkat keparahan tabrakan, dan tren korban kecelakaan. Proyek ini mengolah data historis kecelakaan 2021-2022 menjadi wawasan terukur untuk mengidentifikasi kondisi berisiko tinggi berdasarkan cuaca, permukaan jalan, dan jenis kendaraan." data-en="Development of an interactive Power BI dashboard to analyze road safety metrics, collision severity, and casualty trends. This project transforms 2021-2022 raw accident records into actionable insights to identify high-risk conditions across weather, road surfaces, and vehicle types.">
-    Pengembangan dasbor interaktif Power BI untuk menganalisis metrik keselamatan jalan, tingkat keparahan tabrakan, dan tren korban kecelakaan. Proyek ini mengolah data historis kecelakaan 2021-2022 menjadi wawasan terukur untuk mengidentifikasi kondisi berisiko tinggi berdasarkan cuaca, permukaan jalan, dan jenis kendaraan.
-  </p>
+  <!-- Deskripsi Lengkap Proyek 1 -->
+<div class="project-details" style="margin-bottom: 20px;">
+  <p><b>🎯 1. Latar Belakang & Masalah / Background & Problem Statement:</b><br>
+  Tingginya angka kecelakaan lalu lintas memerlukan langkah preventif yang tepat sasaran. Namun, pemangku kepentingan sering kali kesulitan mengevaluasi tren kecelakaan secara efektif karena data historis masih terfragmentasi dan berbentuk data mentah yang kompleks.</p>
 
-  <!-- Poin-poin Kunci (Insights/Metrics) -->
-  <ul class="insights-list" style="margin-bottom: 20px;">
-    <li>
-      <strong data-id="Metrik Utama:" data-en="Key Metrics:">Metrik Utama:</strong> 
-      <span data-id="Total Korban (Casualties), Pertumbuhan YoY, Rincian Keparahan (Severity), Jenis Kendaraan, dan Dampak Area (Urban vs Rural)." data-en="Total Casualties, YoY Growth, Casualty Breakdown by Severity, Vehicle Types, and Urban vs. Rural Impact.">Total Korban (Casualties), Pertumbuhan YoY, Rincian Keparahan (Severity), Jenis Kendaraan, dan Dampak Area (Urban vs Rural).</span>
-    </li>
+  <p><b>🛠️ 2. Langkah Pengerjaan / Execution Steps:</b></p>
+  <ul>
+    <li><b>Pembersihan Data (Power Query):</b> Mengolah data historis (2021–2022), menangani <i>missing values</i>, dan menyelaraskan tipe data.</li>
+    <li><b>Pemodelan Data & DAX:</b> Membentuk <i>Star Schema</i> serta menghitung metrik utama seperti <i>Total Casualties</i>, <i>YoY Growth</i>, dan <i>Severity Breakdown</i>.</li>
+    <li><b>Desain Visual:</b> Merancang dasbor interaktif dengan <i>dynamic slicers</i> (cuaca, permukaan jalan, jenis kendaraan, <i>Urban vs Rural</i>).</li>
+  </ul>
+
+  <p><b>📊 3. Kesimpulan Utama / Key Findings:</b></p>
+  <ul>
+    <li><b>Dominasi Korban:</b> Mayoritas korban berasal dari pengguna kendaraan roda dua dan mobil pribadi di area perkotaan (<i>urban</i>).</li>
+    <li><b>Faktor Jalan & Cuaca:</b> Sebagian besar insiden fatal terjadi pada kondisi jalan kering di siang hari, mengindikasikan <i>human error</i> dan kelajuan tinggi lebih dominan dibanding cuaca buruk.</li>
+  </ul>
+
+  <p><b>💡 4. Insight & Rekomendasi / Actionable Insights:</b></p>
+  <ul>
+    <li><b>Pengetatan Patroli:</b> Mengoptimalkan pengawasan lalu lintas (kamera ETLE & pembatas kecepatan) di titik rawan (<i>blackspot</i>) area perkotaan.</li>
+    <li><b>Edukasi Keselamatan:</b> Menargetkan kampanye keselamatan pada pengendara harian (<i>commuter</i>) terkait bahaya kelalaian saat kondisi cuaca cerah/jalan normal.</li>
+  </ul>
+</div>
     <li>
       <strong data-id="Alat & Teknik:" data-en="Tools & Techniques:">Alat & Teknik:</strong> 
       <span data-id="Power BI (Pembersihan Data Power Query, Formula DAX & Data Modeling, Dynamic Slicers)." data-en="Power BI (Power Query Data Cleansing, DAX Formulas & Data Modeling, Dynamic Slicers).">Power BI (Pembersihan Data Power Query, Formula DAX & Data Modeling, Dynamic Slicers).</span>
