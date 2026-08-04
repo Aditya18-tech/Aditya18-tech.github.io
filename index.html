@@ -217,30 +217,59 @@
     </strong>
   </div>
 
-  <!-- Deskripsi Lengkap Proyek 1 -->
-<div class="project-details" style="margin-bottom: 20px;">
-  <p><b>🎯 1. Latar Belakang & Masalah / Background & Problem Statement:</b><br>
-  Tingginya angka kecelakaan lalu lintas memerlukan langkah preventif yang tepat sasaran. Namun, pemangku kepentingan sering kali kesulitan mengevaluasi tren kecelakaan secara efektif karena data historis masih terfragmentasi dan berbentuk data mentah yang kompleks.</p>
+ <!-- Deskripsi Proyek 1 (Road Accident Analysis) -->
+      <div class="project-details" style="margin-bottom: 20px;">
+        <p>
+          <b>🎯 1. <span data-id="Latar Belakang & Masalah:" data-en="Background & Problem Statement:">Latar Belakang & Masalah:</span></b><br>
+          <span data-id="Tingginya angka kecelakaan lalu lintas memerlukan langkah preventif yang tepat sasaran. Namun, pemangku kepentingan sering kali kesulitan mengevaluasi tren kecelakaan secara efektif karena data historis masih terfragmentasi dan berbentuk data mentah yang kompleks." data-en="High traffic accident rates require targeted preventive measures. However, stakeholders often struggle to evaluate accident trends effectively due to fragmented and complex raw historical data.">Tingginya angka kecelakaan lalu lintas memerlukan langkah preventif yang tepat sasaran. Namun, pemangku kepentingan sering kali kesulitan mengevaluasi tren kecelakaan secara efektif karena data historis masih terfragmentasi dan berbentuk data mentah yang kompleks.</span>
+        </p>
 
-  <p><b>🛠️ 2. Langkah Pengerjaan / Execution Steps:</b></p>
-  <ul>
-    <li><b>Pembersihan Data (Power Query):</b> Mengolah data historis (2021–2022), menangani <i>missing values</i>, dan menyelaraskan tipe data.</li>
-    <li><b>Pemodelan Data & DAX:</b> Membentuk <i>Star Schema</i> serta menghitung metrik utama seperti <i>Total Casualties</i>, <i>YoY Growth</i>, dan <i>Severity Breakdown</i>.</li>
-    <li><b>Desain Visual:</b> Merancang dasbor interaktif dengan <i>dynamic slicers</i> (cuaca, permukaan jalan, jenis kendaraan, <i>Urban vs Rural</i>).</li>
-  </ul>
+        <p>
+          <b>🛠️ 2. <span data-id="Langkah Pengerjaan:" data-en="Execution Steps:">Langkah Pengerjaan:</span></b>
+        </p>
+        <ul>
+          <li>
+            <b data-id="Pembersihan Data (Power Query):" data-en="Data Cleaning (Power Query):">Pembersihan Data (Power Query):</b> 
+            <span data-id="Mengolah data historis (2021–2022), menangani missing values, dan menyelaraskan tipe data." data-en="Processed historical data (2021–2022), handled missing values, and standardized data types.">Mengolah data historis (2021–2022), menangani missing values, dan menyelaraskan tipe data.</span>
+          </li>
+          <li>
+            <b data-id="Pemodelan Data & DAX:" data-en="Data Modeling & DAX:">Pemodelan Data & DAX:</b> 
+            <span data-id="Membentuk Star Schema serta menghitung metrik utama seperti Total Casualties, YoY Growth, dan Severity Breakdown." data-en="Built a Star Schema model and authored DAX formulas for KPIs (Total Casualties, YoY Growth, Severity Breakdown).">Membentuk Star Schema serta menghitung metrik utama seperti Total Casualties, YoY Growth, dan Severity Breakdown.</span>
+          </li>
+          <li>
+            <b data-id="Desain Visual:" data-en="Visual Design:">Desain Visual:</b> 
+            <span data-id="Merancang dasbor interaktif dengan dynamic slicers (cuaca, permukaan jalan, jenis kendaraan, Urban vs Rural)." data-en="Developed an interactive dashboard with dynamic slicers (weather, road surface, vehicle type, Urban vs Rural).">Merancang dasbor interaktif dengan dynamic slicers (cuaca, permukaan jalan, jenis kendaraan, Urban vs Rural).</span>
+          </li>
+        </ul>
 
-  <p><b>📊 3. Kesimpulan Utama / Key Findings:</b></p>
-  <ul>
-    <li><b>Dominasi Korban:</b> Mayoritas korban berasal dari pengguna kendaraan roda dua dan mobil pribadi di area perkotaan (<i>urban</i>).</li>
-    <li><b>Faktor Jalan & Cuaca:</b> Sebagian besar insiden fatal terjadi pada kondisi jalan kering di siang hari, mengindikasikan <i>human error</i> dan kelajuan tinggi lebih dominan dibanding cuaca buruk.</li>
-  </ul>
+        <p>
+          <b>📊 3. <span data-id="Kesimpulan Utama:" data-en="Key Findings:">Kesimpulan Utama:</span></b>
+        </p>
+        <ul>
+          <li>
+            <b data-id="Dominasi Korban:" data-en="Casualty Breakdown:">Dominasi Korban:</b> 
+            <span data-id="Mayoritas korban berasal dari pengguna kendaraan roda dua dan mobil pribadi di area perkotaan (urban)." data-en="The majority of casualties were two-wheeler riders and private car drivers in urban areas.">Mayoritas korban berasal dari pengguna kendaraan roda dua dan mobil pribadi di area perkotaan (urban).</span>
+          </li>
+          <li>
+            <b data-id="Faktor Jalan & Cuaca:" data-en="Road & Weather Factors:">Faktor Jalan & Cuaca:</b> 
+            <span data-id="Sebagian besar insiden fatal terjadi pada kondisi jalan kering di siang hari, mengindikasikan human error dan kelajuan tinggi lebih dominan dibanding cuaca buruk." data-en="Most fatal incidents occurred on dry roads during daylight, showing human error and speeding are main drivers rather than bad weather.">Sebagian besar insiden fatal terjadi pada kondisi jalan kering di siang hari, mengindikasikan human error dan kelajuan tinggi lebih dominan dibanding cuaca buruk.</span>
+          </li>
+        </ul>
 
-  <p><b>💡 4. Insight & Rekomendasi / Actionable Insights:</b></p>
-  <ul>
-    <li><b>Pengetatan Patroli:</b> Mengoptimalkan pengawasan lalu lintas (kamera ETLE & pembatas kecepatan) di titik rawan (<i>blackspot</i>) area perkotaan.</li>
-    <li><b>Edukasi Keselamatan:</b> Menargetkan kampanye keselamatan pada pengendara harian (<i>commuter</i>) terkait bahaya kelalaian saat kondisi cuaca cerah/jalan normal.</li>
-  </ul>
-</div>
+        <p>
+          <b>💡 4. <span data-id="Insight & Rekomendasi:" data-en="Actionable Insights:">Insight & Rekomendasi:</span></b>
+        </p>
+        <ul>
+          <li>
+            <b data-id="Pengetatan Patroli:" data-en="Enhanced Enforcement:">Pengetatan Patroli:</b> 
+            <span data-id="Mengoptimalkan pengawasan lalu lintas (kamera ETLE & pembatas kecepatan) di titik rawan (blackspot) area perkotaan." data-en="Optimize traffic monitoring (ETLE cameras & speed control) at urban blackspots.">Mengoptimalkan pengawasan lalu lintas (kamera ETLE & pembatas kecepatan) di titik rawan (blackspot) area perkotaan.</span>
+          </li>
+          <li>
+            <b data-id="Edukasi Keselamatan:" data-en="Safety Campaigns:">Edukasi Keselamatan:</b> 
+            <span data-id="Menargetkan kampanye keselamatan pada pengendara harian (commuter) terkait bahaya kelalaian saat kondisi cuaca cerah/jalan normal." data-en="Target urban commuters on the risks of speeding and distraction during optimal driving conditions.">Menargetkan kampanye keselamatan pada pengendara harian (commuter) terkait bahaya kelalaian saat kondisi cuaca cerah/jalan normal.</span>
+          </li>
+        </ul>
+      </div>
     <li>
       <strong data-id="Alat & Teknik:" data-en="Tools & Techniques:">Alat & Teknik:</strong> 
       <span data-id="Power BI (Pembersihan Data Power Query, Formula DAX & Data Modeling, Dynamic Slicers)." data-en="Power BI (Power Query Data Cleansing, DAX Formulas & Data Modeling, Dynamic Slicers).">Power BI (Pembersihan Data Power Query, Formula DAX & Data Modeling, Dynamic Slicers).</span>
